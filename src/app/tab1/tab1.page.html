@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Calculadora </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-label> Valor 1 </ion-label>
+  <ion-input placeholder="Enter Input"></ion-input>
+  <hr />
+  <ion-label> valor 2 </ion-label>
+  <ion-input placeholder="Enter Input"></ion-input>
+  <hr />
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="full">+</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="full">-</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="full">*</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="full">/</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="full">&lt;</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="full">&gt;</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div class="final">
+    <ion-label> Resultado: </ion-label>
+    <ion-label> Operação: </ion-label>
+  </div>
+</ion-content>
