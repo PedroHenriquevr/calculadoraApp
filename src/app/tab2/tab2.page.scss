@@ -1,9 +1,56 @@
-ion-grid{
-  ion-row{
-    ion-col{
-      ion-button{
-        display: flex;
-      }
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.low-bar {
+  height: rem-calc(45);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #EDEDED;
+  font-size: 25px;
+
+  .menu {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+
+    span {
+      padding-left: 10px;
     }
   }
+  .historic {
+    display: flex;
+    align-items: center;
+    color: #EDEDED;
+  }
+}
+
+
+.resultado{
+  background-color: #EDEDED;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  padding: 2.5rem 0;
+  p{
+    font-size: 5vh;
+    padding: 0;
+    margin: 0;
+  }
+}
+ion-col{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 2px;
+  row-gap: 2px;
+  height: 80px;
+}
+ion-button{
+ height: 100%;
+}
+
+.number{
+  --background: rgb(22, 22, 22);
 }

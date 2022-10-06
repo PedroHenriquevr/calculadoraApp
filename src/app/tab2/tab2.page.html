@@ -1,33 +1,41 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title> Tab 2 </ion-title>
+    <ion-title> Calculadora </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-label> Operação </ion-label>
-  <ion-item>
-    <ion-input placeholder="Resultado" disabled></ion-input>
-  </ion-item>
+  <div class="low-bar">
+    <div class="menu">
+        <ion-icon name="reorder-three-outline"></ion-icon>
+      <span>Padrão</span>
+    </div>
+    <div class="historic">
+        <ion-icon name="timer-outline"></ion-icon>
+    </div>
+  </div>
+  <div class="resultado">
+    <p>0</p>
+  </div>
   <ion-grid>
     <ion-row>
-      <ion-col>
-        <ion-button expand="full">MC</ion-button>
+      <ion-col size="2">
+        <ion-button expand="full" disabled>MC</ion-button>
       </ion-col>
-      <ion-col>
-        <ion-button expand="full">MR</ion-button>
+      <ion-col size="2">
+        <ion-button expand="full" disabled>MR</ion-button>
       </ion-col>
-      <ion-col>
-        <ion-button expand="full">M+</ion-button>
+      <ion-col size="2">
+        <ion-button expand="full" >M+</ion-button>
       </ion-col>
-      <ion-col>
-        <ion-button expand="full">M-</ion-button>
+      <ion-col size="2">
+        <ion-button expand="full" >M-</ion-button>
       </ion-col>
-      <ion-col>
-        <ion-button expand="full">MS</ion-button>
+      <ion-col size="2">
+        <ion-button expand="full" >MS</ion-button>
       </ion-col>
-      <ion-col>
-        <ion-button expand="full">M<sup>▾</sup></ion-button>
+      <ion-col size="2">
+        <ion-button expand="full" disabled>M<sup>▾</sup></ion-button>
       </ion-col>
     </ion-row>
     <ion-row>
@@ -53,8 +61,7 @@
       </ion-col>
       <ion-col>
         <ion-button expand="full"
-          ><ion-icon name="close-circle"></ion-icon
-        ></ion-button>
+          ><ion-icon name="backspace-outline"></ion-icon></ion-button>
       </ion-col>
       <ion-col>
         <ion-button expand="full">÷</ion-button>
@@ -62,13 +69,13 @@
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-button expand="full">7</ion-button>
+        <ion-button class="number" expand="full">7</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button expand="full">8</ion-button>
+        <ion-button class="number" expand="full">8</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button expand="full">9</ion-button>
+        <ion-button class="number" expand="full">9</ion-button>
       </ion-col>
       <ion-col>
         <ion-button expand="full">×</ion-button>
@@ -76,27 +83,27 @@
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-button expand="full">4</ion-button>
+        <ion-button class="number" expand="full">4</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button expand="full">5</ion-button>
+        <ion-button class="number" expand="full">5</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button expand="full">6</ion-button>
+        <ion-button class="number" expand="full">6</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button expand="full">-</ion-button>
+        <ion-button  expand="full">-</ion-button>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-button expand="full">1</ion-button>
+        <ion-button class="number" expand="full">1</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button expand="full">2</ion-button>
+        <ion-button class="number" expand="full">2</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button expand="full">3</ion-button>
+        <ion-button class="number" expand="full">3</ion-button>
       </ion-col>
       <ion-col>
         <ion-button expand="full">+</ion-button>
@@ -107,7 +114,7 @@
         <ion-button expand="full">±</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button expand="full">0</ion-button>
+        <ion-button class="number" expand="full">0</ion-button>
       </ion-col>
       <ion-col>
         <ion-button expand="full">,</ion-button>
